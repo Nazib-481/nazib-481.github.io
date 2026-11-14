@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,15 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,540;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS (order matters: base, then polish, then theme) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ux-polish.css">
+    <link rel="stylesheet" href="css/ux-theme.css">
 </head>
 <body>
     <!-- ===== TOP BANNER ===== -->
@@ -93,8 +95,8 @@
                     </h1>
 
                     <p class="hero-role" data-aos="fade-up" data-aos-delay="150">
-                        <strong>BBA STUDENT</strong> <span class="divider">|</span> 
-                        <strong>FINANCE</strong> <span class="divider">|</span> 
+                        <strong>BBA STUDENT</strong> <span class="divider">|</span>
+                        <strong>FINANCE</strong> <span class="divider">|</span>
                         <strong>BUSINESS ANALYTICS</strong>
                     </p>
 
@@ -116,13 +118,10 @@
                         <a href="https://www.linkedin.com/in/mdnazibulislamnazib" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin btn-lg">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
-                    <p>
-                                    <i class="fab fa-github"></i>
-                                    <a href="https://github.com/Nazib-481" target="_blank" rel="noopener noreferrer">
-                                        GitHub Profile
-                                    </a>
-                                </p>
-</div>
+                        <a href="https://github.com/Nazib-481" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
 
                     <!-- Live Contact Pills -->
                     <div class="hero-contact-strip" data-aos="fade-up" data-aos-delay="350">
@@ -140,7 +139,7 @@
                 <div class="hero-visual-card" data-aos="fade-left" data-aos-delay="200">
                     <div class="analyst-card-inner">
                         <div class="hero-headshot">
-                            <img src="assets/nazibul-headshot.png" alt="MD Nazibul Islam Nazib professional headshot">
+                            <img src="assets/nazibul-headshot.jpg" alt="MD Nazibul Islam Nazib professional headshot">
                         </div>
                         <div class="analyst-card-header">
                             <div class="analyst-avatar-box">
@@ -228,8 +227,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ===== EDUCATION SECTION ===== -->
 
         <!-- ===== TOOLS & SKILLS SECTION ===== -->
         <section class="section" id="skills">
@@ -542,21 +539,21 @@
         </section>
 
         <section class="section section-alt" id="project-evidence">
-<div class="container">
-<div class="section-header" data-aos="fade-up">
-<span class="section-tag">PROJECT EVIDENCE</span>
-<h2 class="section-title">Show the Work, Not Just the Title</h2>
-<div class="section-divider"></div>
-<p class="section-subtitle">Each case has a downloadable dataset/workbook so the analysis can be inspected rather than treated as a claim.</p>
-</div>
-<div class="academic-work-grid">
-<article class="academic-card"><div class="academic-card-body"><h3 class="case-title">Full Case Study Pack</h3><p>Datasets, Excel workbook and project notes for the four Bangladesh-market cases.</p><div class="case-links"><a href="projects/case-studies.html">Open case studies</a><a href="projects/Nazibul_Bangladesh_Analytics_Project_Pack.xlsx">Download workbook</a></div></div></article>
-<article class="academic-card"><div class="academic-card-body"><h3 class="case-title">Power BI Ready</h3><p>Retail transaction data is structured for Power BI import, DAX measures and interactive report pages.</p><div class="case-links"><a href="projects/retail_sales_bangladesh_synthetic.csv">Download retail CSV</a><a href="projects/README.md">Read project notes</a></div></div></article>
-</div>
-</div>
-</section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">PROJECT EVIDENCE</span>
+                    <h2 class="section-title">Show the Work, Not Just the Title</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Each case has a downloadable dataset/workbook so the analysis can be inspected rather than treated as a claim.</p>
+                </div>
+                <div class="academic-work-grid">
+                    <article class="academic-card"><div class="academic-card-body"><h3 class="case-title">Full Case Study Pack</h3><p>Datasets, Excel workbook and project notes for the four Bangladesh-market cases.</p><div class="case-links"><a href="projects/case-studies.html">Open case studies</a><a href="projects/Nazibul_Bangladesh_Analytics_Project_Pack.xlsx">Download workbook</a></div></div></article>
+                    <article class="academic-card"><div class="academic-card-body"><h3 class="case-title">Power BI Ready</h3><p>Retail transaction data is structured for Power BI import, DAX measures and interactive report pages.</p><div class="case-links"><a href="projects/retail_sales_bangladesh_synthetic.csv">Download retail CSV</a><a href="projects/README.md">Read project notes</a></div></div></article>
+                </div>
+            </div>
+        </section>
 
-<!-- ===== DEVELOPMENT FOCUS SECTION ===== -->
+        <!-- ===== DEVELOPMENT FOCUS SECTION ===== -->
         <section class="section" id="development">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
@@ -692,25 +689,22 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer>
-            <div class="container">
-                <div class="footer-bottom-row">
-                    <p>&copy; 2026 MD Nazibul Islam Nazib. All rights reserved.</p>
-                    <div class="footer-badges">
-                        <button id="openIdeBtnFooter" class="footer-ide-btn">
-                            <i class="fas fa-code"></i> IDE Explorer
-                        </button>
-                        <span class="badge-netlify">
-                            <i class="fas fa-cloud-upload-alt"></i> Netlify Ready
-                        </span>
-                    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 MD Nazibul Islam Nazib. All rights reserved.</p>
+                <div class="footer-badges">
+                    <button id="openIdeBtnFooter" class="footer-ide-btn">
+                        <i class="fas fa-code"></i> IDE Explorer
+                    </button>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!-- ===== BUILT-IN INTERACTIVE IDE CODEBASE MODAL ===== -->
-    <!-- Solves user request: "i want too see the entire codebase like an IDE, where is the option" -->
     <div class="ide-modal-overlay" id="ideModal" aria-hidden="true" role="dialog">
         <div class="ide-modal-window">
             <div class="ide-modal-header">
@@ -720,7 +714,7 @@
                     <span class="control-dot maximize"></span>
                 </div>
                 <div class="ide-project-title">
-                    <i class="fas fa-folder-open text-accent"></i> d:\portfolio &mdash; Antigravity Code Explorer
+                    <i class="fas fa-folder-open text-accent"></i> nazib-481.github.io &mdash; Code Explorer
                 </div>
                 <div class="ide-header-actions">
                     <span class="ide-status-badge"><i class="fas fa-check-circle"></i> Live Workspace</span>
@@ -741,18 +735,20 @@
                         <li class="file-item" data-file="css/style.css">
                             <i class="fab fa-css3-alt file-icon css-icon"></i> css/style.css
                         </li>
+                        <li class="file-item" data-file="css/ux-theme.css">
+                            <i class="fab fa-css3-alt file-icon css-icon"></i> css/ux-theme.css
+                        </li>
                         <li class="file-item" data-file="js/main.js">
                             <i class="fab fa-js file-icon js-icon"></i> js/main.js
                         </li>
-                        <li class="file-item" data-file="netlify.toml">
-                            <i class="fas fa-cog file-icon toml-icon"></i> netlify.toml
+                        <li class="file-item" data-file="js/ux-theme.js">
+                            <i class="fab fa-js file-icon js-icon"></i> js/ux-theme.js
                         </li>
                     </ul>
 
                     <div class="ide-sidebar-info">
-                        <h5><i class="fas fa-info-circle"></i> File Locations</h5>
-                        <p>All files are saved on your machine at: <code>d:\portfolio</code></p>
-                        <p class="mt-2">You can also open this directly in VS Code by typing <code>code d:\portfolio</code> in your terminal.</p>
+                        <h5><i class="fas fa-info-circle"></i> About this view</h5>
+                        <p>These files are loaded live from this website, so what you see is exactly what is running.</p>
                     </div>
                 </aside>
 
@@ -795,7 +791,9 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
+    <!-- Scripts (order matters: original, then polish, then theme) -->
     <script src="js/main.js"></script>
+    <script src="js/ux-polish.js"></script>
+    <script src="js/ux-theme.js"></script>
 </body>
 </html>
