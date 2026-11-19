@@ -3311,3 +3311,60 @@ body {
         height: 200px;
     }
 }
+
+
+/* ================= FINAL PORTFOLIO POLISH ================= */
+/* The announcement strip is intentionally removed from the visible layout. */
+.top-announcement{display:none!important}
+
+/* Elegant project cards */
+#academic-work .academic-work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.35rem}
+#academic-work .academic-card{
+  position:relative; overflow:hidden; border:1px solid #dfe7f3; border-radius:22px;
+  padding:1.45rem; background:linear-gradient(145deg,#fff 0%,#fbfdff 72%,#f4f8ff 100%);
+  box-shadow:0 12px 34px rgba(24,45,78,.07); transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+#academic-work .academic-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#2563eb,#7c3aed,#ea580c);opacity:.9}
+#academic-work .academic-card:nth-child(2)::before{background:linear-gradient(90deg,#7c3aed,#c026d3)}
+#academic-work .academic-card:nth-child(3)::before{background:linear-gradient(90deg,#ea580c,#f59e0b)}
+#academic-work .academic-card:nth-child(4)::before{background:linear-gradient(90deg,#0f766e,#14b8a6)}
+#academic-work .academic-card:hover{transform:translateY(-7px);box-shadow:0 20px 45px rgba(24,45,78,.13);border-color:#cbd8ed}
+#academic-work .academic-card-header{padding-top:.15rem}
+#academic-work .card-num-badge{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#eef4ff;color:#2563eb;font-weight:800}
+#academic-work .academic-card:nth-child(2) .card-num-badge{background:#f3eefe;color:#7c3aed}
+#academic-work .academic-card:nth-child(3) .card-num-badge{background:#fff1e7;color:#ea580c}
+#academic-work .academic-card:nth-child(4) .card-num-badge{background:#e8faf7;color:#0f766e}
+#academic-work .card-tag{font-weight:800;letter-spacing:.07em;color:#51627c}
+#academic-work .status-chip{background:#f3f6fa;color:#64748b;border:1px solid #e4eaf2}
+#academic-work .case-title{font-size:1.55rem;margin:.9rem 0 .65rem}
+#academic-work .case-problem{font-size:.98rem;line-height:1.72}
+#academic-work .case-outcome{background:#f7f9fc;border-left:0;border-radius:15px;padding:1rem 1.05rem;box-shadow:inset 0 0 0 1px #e8edf4}
+#academic-work .case-links{margin-top:1rem;gap:.65rem;flex-wrap:wrap}
+#academic-work .case-links a{padding:.62rem .9rem;border-radius:10px;background:#fff;border:1px solid #d8e2ef;color:#1d4ed8;text-decoration:none;transition:.2s ease}
+#academic-work .case-links a:first-child{background:#2563eb;color:#fff;border-color:#2563eb}
+#academic-work .case-links a:hover{transform:translateY(-2px);box-shadow:0 7px 16px rgba(37,99,235,.16)}
+
+/* Course project cards */
+#academic-work .academic-projects-grid{gap:1.35rem}
+#academic-work .academic-project-card{border-radius:20px;border:1px solid #dfe7f3;box-shadow:0 10px 30px rgba(24,45,78,.06);background:#fff;transition:.28s ease}
+#academic-work .academic-project-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(24,45,78,.11)}
+#academic-work .academic-project-card .case-badge{background:#eef4ff;color:#2563eb}
+#academic-work .academic-project-card .case-links a{padding:.6rem .85rem;border-radius:10px;background:#2563eb;color:#fff;text-decoration:none}
+
+/* Animated My Approach V2: clear gap after heading + sequential highlight */
+.credentials-rule-banner.approach-animated{border-radius:20px;border:1px solid #cfe0ef;background:linear-gradient(100deg,#073348,#0b4055);padding:1.25rem 1.5rem;overflow:hidden;box-shadow:0 12px 28px rgba(7,51,72,.10)}
+.approach-animated .rule-text{display:flex;align-items:center;gap:0;flex-wrap:wrap;font-size:1.08rem}
+.approach-animated .rule-text strong{font-size:1.12rem;color:#fff;white-space:nowrap}
+.approach-gap{display:inline-block;width:32px;min-width:32px;height:1px;flex:0 0 32px}
+.approach-flow{display:flex;align-items:center;gap:.38rem;margin-left:0;flex-wrap:wrap;color:#d7e7ee}
+.approach-flow i{font-style:normal;color:#8fc5d5;font-weight:800}
+.approach-step{display:inline-flex;align-items:center;padding:.28rem .6rem;border-radius:999px;color:#d7ff27;font-weight:700;transition:.35s ease}
+.approach-step:nth-of-type(1){animation:approachPulse 5s infinite .0s}
+.approach-step:nth-of-type(2){animation:approachPulse 5s infinite 1s}
+.approach-step:nth-of-type(3){animation:approachPulse 5s infinite 2s}
+.approach-step:nth-of-type(4){animation:approachPulse 5s infinite 3s}
+.approach-step:nth-of-type(5){animation:approachPulse 5s infinite 4s}
+@keyframes approachPulse{0%,18%,100%{background:transparent;box-shadow:none;transform:translateY(0)}8%{background:rgba(215,255,39,.14);box-shadow:0 0 0 1px rgba(215,255,39,.32),0 0 20px rgba(215,255,39,.10);transform:translateY(-1px)}12%{background:rgba(215,255,39,.08)}}
+
+@media(max-width:900px){#academic-work .academic-work-grid{grid-template-columns:1fr}.approach-animated .rule-text{font-size:1rem}.approach-flow{margin-top:.35rem}}
+@media(max-width:600px){#academic-work .academic-card{padding:1.15rem}.approach-gap{width:18px;min-width:18px;flex-basis:18px}.approach-flow{gap:.2rem}.approach-step{padding:.22rem .42rem;font-size:.88rem}}
