@@ -1,9 +1,0 @@
-Line Item,Base Case (BDT),Best Case (BDT),Worst Case (BDT)
-Sales Revenue,900000,1050000,720000
-COGS,540000,614250,460800
-Rent,80000,80000,80000
-Salaries,100000,105000,95000
-Utilities,30000,32000,35000
-Delivery/Logistics,45000,48000,55000
-Marketing,30000,35000,20000
-Other Operating Costs,25000,26000,30000
